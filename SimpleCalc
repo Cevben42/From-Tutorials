@@ -1,0 +1,48 @@
+//allow the use of user input
+import java.util.Scanner;
+
+public class Main {    
+    public static void main(String[] args) {
+        //define the variables
+        double num1;
+        double num2;
+        String operation;
+        double result = 0;
+        
+        for(int i = 0; i < 5; i++) {
+        //try statement to catch errors
+        try {
+        //Asking user input to place in the values
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Welcome to calculator");
+        System.out.println("Input your first number: ");
+        num1 = scanner.nextDouble();
+        System.out.println("Input your operation: ");
+        operation = scanner.next();
+        System.out.println("Input your second number: ");
+        num2 = scanner.nextDouble();
+        
+        //THe different operations
+        switch (operation) {
+            case "+":
+                result = num1 + num2;
+                
+            case "-":
+                result = num1 + num2;
+                
+            case "*":
+                result = num1 * num2;
+                
+            case "x":
+                result = num1 * num2;
+                
+            case "/":
+                result = num1 / num2;
+        }
+        System.out.println("" + result);
+    } catch (Exception e) {
+        System.out.println("Something went wrong.");
+    }
+    }
+    }
+}
