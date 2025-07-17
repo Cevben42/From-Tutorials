@@ -16,6 +16,6 @@ def fib(n):
         print(c)
 
 
-fib(10)
+fib(45)
 
 #From: https://www.youtube.com/watch?v=7Sv4NmvdHcw
